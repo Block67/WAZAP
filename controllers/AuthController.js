@@ -1,6 +1,6 @@
 const bcrypt = require("bcrypt");
-const { User } = require("../models"); // Adjust the path as necessary
-const { generateUniqueId } = require("../utils/generateId"); // Import the utility function
+const { User } = require("../models/User");
+const { generateUniqueId } = require("../utils/generateId");
 const jwt = require("jsonwebtoken");
 
 const JWT_SECRET = process.env.JWT_SECRET || "your_jwt_secret"; // Store in .env file

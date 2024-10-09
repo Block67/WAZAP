@@ -1,4 +1,5 @@
-const { Subscription, User } = require('../models'); // Adjust the path as necessary
+const Subscription = require('../models/Subscription');
+const User = require('../models/User');
 
 class SubscriptionController {
     // Get all subscriptions
@@ -13,7 +14,7 @@ class SubscriptionController {
 
     // Subscribe to a plan
     async subscribe(req, res) {
-        const userId = req.user.id; // Assuming user ID is set in middleware
+        const userId = req.user.id;
         const { subscriptionId } = req.body;
 
         try {

@@ -1,6 +1,6 @@
 // models/Subscription.js
 const { DataTypes } = require('sequelize');
-const sequelize = require('../config/config');
+const sequelize = require('../config/sequelize');
 
 const Subscription = sequelize.define('Subscription', {
     id: {
@@ -10,7 +10,7 @@ const Subscription = sequelize.define('Subscription', {
     },
     type: {
         type: DataTypes.STRING,
-        allowNull: false, // e.g., Monthly, Yearly
+        allowNull: false,
     },
     price: {
         type: DataTypes.FLOAT,
@@ -21,7 +21,7 @@ const Subscription = sequelize.define('Subscription', {
     },
     validityPeriod: {
         type: DataTypes.INTEGER,
-        allowNull: false, // in days
+        allowNull: false,
     },
 }, {
     timestamps: true,

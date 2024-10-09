@@ -1,6 +1,5 @@
-// models/User.js
 const { DataTypes } = require('sequelize');
-const sequelize = require('../config/config');
+const sequelize = require('../config/sequelize');
 
 const User = sequelize.define('User', {
     id: {
@@ -30,9 +29,15 @@ const User = sequelize.define('User', {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    subscriptionStatus: {
-        type: DataTypes.ENUM('active', 'inactive'),
-        defaultValue: 'inactive',
+    instance_id: {
+        type: DataTypes.STRING(7),
+        allowNull: false,
+        unique: true,
+    },
+    access_token: {
+        type: DataTypes.STRING(7),
+        allowNull: false,
+        unique: true,
     },
 }, {
     timestamps: true,

@@ -4,8 +4,8 @@ const authenticateToken = require('../middleware/auth');
 
 const router = express.Router();
 
-router.post('/send-text', authenticateToken, WazapController.sendText); // Send a text message
-router.post('/send-bulk-text', authenticateToken, WazapController.sendBulkText); // Send bulk text messages
-router.post('/send-media', authenticateToken, WazapController.sendMedia); // Send media file
+router.post('/send-text', authenticateToken, WazapController.sendText);
+router.post('/send-bulk-text', authenticateToken, WazapController.sendBulkText);
+router.post('/send-media', authenticateToken, WazapController.sendMedia);
 
 module.exports = router;

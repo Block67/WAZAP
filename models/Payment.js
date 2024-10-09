@@ -1,6 +1,6 @@
 // models/Payment.js
 const { DataTypes } = require('sequelize');
-const sequelize = require('../config/config');
+const sequelize = require('../config/sequelize');
 
 const Payment = sequelize.define('Payment', {
     id: {
@@ -33,8 +33,8 @@ const Payment = sequelize.define('Payment', {
         defaultValue: DataTypes.NOW,
     },
     status: {
-        type: DataTypes.ENUM('successful', 'failed', 'pending'),
-        defaultValue: 'successful',
+        type: DataTypes.ENUM('successful', 'failed', 'pending', 'expired'),
+        defaultValue: 'pending',
     },
     method: {
         type: DataTypes.STRING,

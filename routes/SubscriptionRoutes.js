@@ -4,7 +4,7 @@ const authenticateToken = require('../middlewares/auth');
 
 const router = express.Router();
 
-router.get('/', SubscriptionController.getAllSubscriptions);         // Get all subscriptions
-router.post('/subscribe', authenticateToken, SubscriptionController.subscribe); // Subscribe to a plan
+router.get('/get-all-subscription', SubscriptionController.getAllSubscriptions);
+router.post('/subscribe', authenticateToken, SubscriptionController.subscribe);
 
 module.exports = router;

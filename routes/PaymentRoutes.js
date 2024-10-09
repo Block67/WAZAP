@@ -4,7 +4,7 @@ const authenticateToken = require('../middlewares/auth');
 
 const router = express.Router();
 
-router.post('/make', authenticateToken, PaymentController.makePayment);   // Make a payment
-router.get('/history', authenticateToken, PaymentController.getPaymentHistory); // Get payment history
+router.post('/make', authenticateToken, PaymentController.makePayment);
+router.get('/history', authenticateToken, PaymentController.getPaymentHistory);
 
 module.exports = router;
