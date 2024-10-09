@@ -1,4 +1,4 @@
-echo "# Projet API de Gestion des Abonnements WhatsApp
+HEY WAZAP
 
 ## Description
 
@@ -25,14 +25,12 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 
 1. **Clonez le dépôt :**
 
-   \`\`\`bash
-   git clone https://github.com/votre-utilisateur/votre-repo.git
-   cd votre-repo
+   \`\`\`RAS
    \`\`\`
 
 2. **Installez les dépendances :**
 
-   \`\`\`bash
+   \`\`\`
    npm install
    \`\`\`
 
@@ -42,13 +40,13 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 4. **Migrations :**
    - Synchronisez les modèles avec la base de données :
 
-   \`\`\`bash
+   \`\`\`
    npm run migrate
    \`\`\`
 
 5. **Démarrez le serveur :**
 
-   \`\`\`bash
+   \`\`\`
    npm start
    \`\`\`
 
