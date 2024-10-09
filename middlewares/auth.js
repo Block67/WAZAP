@@ -1,7 +1,7 @@
 // middleware/auth.js
 const jwt = require('jsonwebtoken');
 
-const JWT_SECRET = 'H4rD2Gu3ssK3y!f0rJWT12345678'; // Utilise la même clé secrète
+const JWT_SECRET = 'H4rD2Gu3ssK3y!f0rJWT12345678';
 
 function authenticateToken(req, res, next) {
     const token = req.headers['authorization'] && req.headers['authorization'].split(' ')[1];
